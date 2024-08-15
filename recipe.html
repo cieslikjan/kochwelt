@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rezept des Tages</title>
+
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body onload="includeHTML()">
+    
+    <!-- HEADER -->
+    <header w3-include-html="/templates/header.html"></header>
+
+    <main>
+
+        <div class="top-section">
+            <h1>Griechischer Bauernsalat</h1>
+            <img src="/img/salad.jpg" alt="">
+
+            <div class="icons">
+                <div class="icon-pill">
+                    <img src="/img/icons/clock-regular.svg" alt="">
+                    <div>15 Min.</div>
+                </div>
+                <div class="icon-pill">
+                    <img src="/img/icons/brain-solid.svg" alt="">
+                    <span>simpel</span>
+                </div>
+                <div class="icon-pill">
+                    <img src="/img/icons/calendar-alt-regular.svg" alt="">
+                    <span>28.09.2020</span>
+                </div>
+            </div>
+        </div>
+    
+        <div class="recipe-detail-section">
+            <div class="servings-section">
+                <label for="servings">Zutaten für</label>
+                <input type="number" id="servings" value="4">
+                <button class="servings-btn" onclick="calculateIngredients()">Portionen</button>
+            </div>
+
+            <ul class="ingredient-list" id="ingredient-list">
+                <li class="ingredient-list-item"><span id="ingredient1">1</span> Salatgurke (n)</li>
+                <li class="ingredient-list-item"><span id="ingredient2">2</span> Paprikaschote(n)</li>
+                <li class="ingredient-list-item"><span id="ingredient3">500</span>g Tomate(n)</li>
+                <li class="ingredient-list-item"><span id="ingredient4">2</span> Zwiebel(n)</li>
+                <li class="ingredient-list-item"><span id="ingredient5">200</span>g Schafskäse</li>
+                <li class="ingredient-list-item"><span id="ingredient6">1</span> Glas Oliven</li>
+                <li class="ingredient-list-item"><span id="ingredient7"></span>Salz und Pfeffer</li>
+                <li class="ingredient-list-item"><span id="ingredient8">2</span> Zitrone(n)</li>
+                <li class="ingredient-list-item"><span id="ingredient9">125</span>ml Olivenöl</li>
+                <li class="ingredient-list-item"><span id="ingredient10"></span>Oregano</li>
+            </ul>
+            
+        </div>
+    
+        <div class="preparation">
+            <h1>Zubereitung</h1>
+            <div class="icons">
+                <div class="icon-pill">
+                    <img src="/img/icons/clock-regular.svg" alt="">
+                    <span>ca. 15 Minuten</span>
+                </div>
+                <div class="icon-pill">
+                    <img src="/img/icons/clock-regular.svg" alt="">
+                    <span>Gesamtzeit ca. 15 Minuten</span>
+                </div>
+            </div>
+
+            <span class="preparation-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus voluptatum perferendis laboriosam modi rem enim fugit inventore odio impedit? Sequi aspernatur exercitationem atque iure! Eaque fugit ad adipisci itaque ipsum?</span>
+
+        </div>
+    
+        <div class="bottom-section">
+            <h2>Rezept erstellt von</h2>
+
+            <div class="profile">
+                <img src="./img/profile.png" alt="">
+                <h2 class="user-name">Jan</h2>
+            </div>
+            
+        </div>
+
+    </main>
+
+    
+
+    <footer w3-include-html="templates/footer.html"></footer>
+   
+</body>
+</html>

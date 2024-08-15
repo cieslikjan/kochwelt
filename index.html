@@ -7,8 +7,52 @@
 
     <link rel="stylesheet" href="./style.css">
     <script src="./script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
 </head>
-<body>
+<body onload="includeHTML()">
+     <!-- HEADER -->
+     <header w3-include-html="templates/header.html"></header>
+
+    <div class="container hero">
+        <img src="/img/croissant.jpg" alt="">
+        <div class="hero-recipe">
+            <div>
+                <h1>Französische Croissants</h1>
+                <span class="preparation-text"">s soluta perspiciatis ullam architecto?</span>
+            </div>
+
+            <div class="recipe-btn">
+                <a href="/recipe.html">Rezept öffnen</a>
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container recipes-container">
+
+        <h1>Lust auf was Neues?</h1>
+
+        <div class="cards">
+            <div class="card">
+                <a href="recipe.html"><img src="/img/croissant.jpg" alt=""></a>
+                <span>Frische Croissants</span>
+            </div>
+            <div class="card">
+                <a href="recipe.html"><img src="/img//salad.jpg" alt=""></a>
+                <span>Frischer Salat</span>
+            </div>
+            <div class="card">
+                <a href="recipe.html"><img src="/img/wok.jpg" alt=""></a>
+                <span>Frischer Wok</span>
+            </div>
+        </div>
+    </div>
+
+     <footer w3-include-html="templates/footer.html"></footer>
     
 </body>
 </html>
